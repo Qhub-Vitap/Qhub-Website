@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Q-Hub VIT-AP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="Css/eventstyle.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous">
+    </script>
+    <!--
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    -->
+    
+
+  </head>
+  <body>
+
+    <!-- Top Button Starts -->
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg rounded-circle" id="btn-back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+    let mybutton = document.getElementById("btn-back-to-top");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      
+    }
+</script>
+
+    <!-- Top Button Ends -->
+
+    <!-- Navbar Starts -->
+
+    <!-- Navbar -->
+  <nav class="navbar customnav navbar-expand-lg navbar-light bg-light sticky-top" id="nb">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Images/logo.jpg" alt="" width="120" height="54">
+      </a>
+      <!--<a class="navbar-brand" href="#"><strong>QHUB VIT-AP</strong></a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav fs-5 ms-auto me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active selected" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#team">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#event">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar Ends -->
+
+  <!-- Home Section Starts -->
+
+  <div class="container-fluid hs text-light" id="navhome">
+    <div class="row featurette d-flex justify-content-center align-items-center my-5">
+      <div class="col-md-7 main-cont1 my-5">
+        <h2 class="featurette-heading main-title mt-3 mb-5"><span class="highlight mt-5"> <strong>WE ARE THE QUIZ
+              ERA</strong></span>
+        </h2>
+        <div class="main-info fs-4">
+          <h1 class="mt-5 mb-3"> <strong>Q-HUB</strong></h1>
+          <h3 class="mb-4">VELLORE INSTITUTE OF TECHNOLOGY, A.P</h3>
+          <p class="fs-6 mb-3" style="font-size: large;">Hey..!! Wondering how to stay updated on all the info about tech in this rapidly changing world ?<br>
+            Don't worry We are here... Q-Hub will ensure that you will never miss any latest news.<br><br>So what are you waiting for? Join us right now..!!</p>
+        </div>
+                  <a href="#about" class="btn btn-outline-light mb-5"role="button">JOIN US</a>
+        </div>
+      <div class="col-md-5" data-aos="zoom-in-left">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Section Ends -->
+
+  <!-- About Section Starts -->
+
+  <section class="team-section text-center" style="margin-top: 5%;" id="about">
+    <h2 class="h1-responsive font-weight-normal mt-5 mb-3 border border-white rounded text-white" id="head1">ABOUT US</h2>
+  </section>
+  <div class="container text-light my-5">
+    <div class="row featurette d-flex justify-content-center align-items-center">
+      <div class="col-md-7 main-cont2">
+        <h2 class="featurette-heading"><span class="greeting"> </span><span class="highlight"></span>
+        </h2>
+        <div class="main-info fs-2" id="abouttxt">
+          Want to be updated on all the info about tech? In this rapidly changing world, it is indeed mandatory for
+          students to keep themselves updated about technology. Worry not, We here, Q-Hub are an interactive zone where
+          we conduct quizzes in order to keep aware of the latest Technical stuff, Science, Technology and share it with
+          the entire community. <br><br>
+          Students prepare, participate and host quizzes on various topics. The objective of our
+          club is to foster a desire for knowledge, to expand the intellectual, mental, and creative ability of the
+          students while infusing a sense of healthy competition among them.
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="zoom-in-left">
+
+      </div>
+    </div>
+  </div>
+
+    <!-- About Section Ends -->
+
+    <!-- Team Section Starts -->
+    <section class="team-section text-center mb-4 mt-5" id="team">
+    <h2 class="h1-responsive font-weight-normal my-5 border border-white rounded text-white" id="head1">OUR TEAM</h2>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Images/Q-Hub_photo.jpg" class="rounded z-depth-1-half" alt="DR. KARTHIKA NATARAJAN">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">DR. KARTHIKA NATARAJAN</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>Faculty Co-ordinator</strong></h6>
+      </div>
+      
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Team/T-1.jpg" class="rounded z-depth-1-half" alt="KOTA KARTHIK KUMAR">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">KOTA KARTHIK KUMAR</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>Club Advisor</strong></h6>
+      </div>
+
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Team/T-2.JPG" class="rounded z-depth-1-half" alt="SAI KIRAN YADLAPALLI">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">SAI KIRAN YADLAPALLI</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>President</strong></h6>
+      </div>
+
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Team/T-3.jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">NAME</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>Photographer</strong></h6>
+      </div>
+    
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Team/T-4.jpg" class="rounded z-depth-1-half" alt="Sample avatar">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">NAME</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>Secretary</strong></h6>
+      </div>
+    
+      <div class="col-md-4 mb-md-0 mb-5">
+        <div class="avatar mx-auto">
+          <img src="Team/T-5.jpeg" class="rounded z-depth-1-half" alt="Sample avatar">
+        </div>
+        <h5 class="font-weight-normal text-white my-3">NAME</h5>
+        <h6 class="text-uppercase text-white mb-4"><strong>Club Manager</strong></h6>
+      </div>
+
+    </div>
+
+    <a href="https://www.google.com/" class="btn btn-success rounded" role="button">View More</a>
+  </section>
+
+  <!-- Team Section Ends -->
+
+  <!-- Event Section Starts -->
+
+  <section class="gallery-section text-center mb-4 mt-5" id="event">
+    <h2 class="h1-responsive font-weight-normal mt-5 mb-3 border border-white rounded text-white" id="head1">EVENTS</h2>
+
+    <div class="container text-center my-3">
+      <div class="row mx-auto my-auto">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="Images/photo.jpg"> </div>
+                              <div class="card-title mt-4">Q-Hub Mega Quiz<br /> <small>12-11-2021</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">Q-Hub in collaboration with BHAJRANG FOUNDATION conducted its first offline event which was a Quiz on Current Affairs.</small> </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHbwT4V97-Mwg/feedshare-shrink_800/0/1639636650021?e=1646265600&v=beta&t=tOAoSJ7oNCPeth8NQj8BjTSDc2tvwqMqtvagV_pXp0Q"> </div>
+                              <div class="card-title mt-4">Code Fiesta<br /> <small>19-12-2021</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">Q-Hub masterminded it's second event, which was a coding quiz and was held on D2C, an online platform.</small> </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="https://media-exp1.licdn.com/dms/image/C5622AQEEw6oNyDlevA/feedshare-shrink_800/0/1643368502843?e=1646265600&v=beta&t=K48V5Qe_RsiGnKXZ4MkKk-CVQAP8JdZbdC093QPiLvI"> </div>
+                              <div class="card-title mt-4">Covid-19 effects on students <br>and ways to recover<br /> <small>31-01-2021</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">Q-Hub in collaboration with NSS club conducted its third event which was a guest lecture by Deek Parassini (Founder, LIAP Foundation).</small> </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="https://media-exp1.licdn.com/dms/image/C5622AQFVfSbBdwY28w/feedshare-shrink_800/0/1644142550436?e=1646870400&v=beta&t=avl_kQHQ4IyPGuB7vg8UrFomqNETiqm4q5LiM-om1J8"> </div>
+                              <div class="card-title mt-4">Webinar on Digital Marketing<br /> <small>07-02-2022</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">Q-Hub's fourth event which was a webinar on Digital Marketing by Mr. Veerander Chowdary, an Entrepreneur, Digital Marketer and a Sales Trainer..</small> </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="Images/photo.jpg"> </div>
+                              <div class="card-title mt-4">Event-5<br /> <small>Coming Soon</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">Stay tuned for the upcoming events.<br>Hint to be dropped soon.</small> </p>
+                              </div>
+                              <!--<a href="https://www.google.com/" class="btn btn-success rounded" role="button">Register Now</a>-->
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--<div class="carousel-item">
+                  <div class="col-md-4">
+                    <div class="card mt-100">
+                      <div class="card-content">
+                          <div class="card-body p-0">
+                              <div class="profile"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX///+GFBSAAAC6iorStbWDAAB+AAB8AAD9+vrCmJjQsLCFDQ2FERH79/fNq6v59PSHCQnw5eXj0NCQLy+weHj07OzGoKC+kZGrbm61gYHawcGJGRns3t7izs6XQEDy6OimZGSaSUmgV1ecTk6oaGjYvr6TNzdyAACMJSWVOzvKpaWLICCxe3ubS0uNKiqeVVVsAADDZaiTAAASdklEQVR4nO1dCZuiOha9BkLYBNkXAQEBESyd///rJgm4VtWr7npdSs9wvu4WMdg53ORuuUGAGTNmzJgxY8aMGTNmzJgxY8aMGTNmzJgxY8aMGTNmzJgxY8b/KWSKV/fhp+ClvpthgnuM21Nk2MtXd+iPQhbDtgzENBnlZ9qqUOwF+7W9+nNIS8e32EEMfuAbplsbw3m3F7yX9uzPQO3DhJIzuxwM8CLVBGlT0/OmQUUYF9u/XZDq2qdkVJwkHgZKTOhgiV36gUks2wcPrDxLXt3Jf4HkqACIgey5dFwSsD3wFbCwnFLqOSRrCCIbkiJ8dT+/jcPWhDj2CJ1yGVA2lGacQhKL9CBxQXCBmGyGxjh+dVe/hU0r0jFoyFBRQngYirLpJZbJD2M1AiOv6JEqQ/k3ijHuqZ70TSJDQjbUSnhi9LY/5W5YnZq2VOhAheWbzXSpWcZg9H+dfVRPVMGodGyG4HngBW3Z3WgULw6ckioeLs70aNeQaOaruvo9GHTY+bEhUgF5YBf7+n0TT1kLTHAm8WQQZK//qyh2IcS2FyoVlZuVVdYnzeI+AFAEgLoXPbP9iyhS6067L29SOkyj7DN+DCJOQYYUBYkP5t8jxTiDlODiuIzBWon/3FZmajRLuLmw8DN69wdAvRcTbMuzU6h/YeSJDRV6Bzk6LOmt+SvQWnJvQZqOo/VLJIsNVU1b2hwC5Yf79kdAXU8zJTWIzFKMMMu+V5lrUyZB03TesXSzfViuh0896g8w34a6sM0/TdqJIGnYv6augF9dz5pEYsbdlWFDMMg5gESWkJ/jRexBRwVp257z/B7/LhqPd9uC+HR7upKoUTCpcbAYwwSWiJiQnB2Zjc6uECQfBPXpPf5N1BEEPOTz2rvzCUEyKObAkIIzvCItIEGHlA5U7Xl9/R7WNJroEkrFeQjf95IBVIyfMITAh5gKUQBj4spGpF3UHEuFwHj4pJacmnmmnzBkd8TZUg8WVk/q6jexZjPLIJbXvPtIQ1zzfMYwKYC6N/EaDP8J/fw27Ar8nL5A/j79ohB+bjMwlKUHhlClIKTxHqD/+X5+H6HtpUqOLevt/Wcet36eT4ho0siKkO6eIjUUS1gnAbhTTk5hCLKD6EH1USc5IdmU6Z/zyx2o3FUnXcpp9ISefhO0b17iohrar9u+R5JDAswHn7CuiVKwUkhko/vW5b0MPspDyKfrurWQlgVawvZ7qeygBpdqWdt4tDSTgexQdxuoMXx0LqODqNZfs7Zd8L208JLqy6YvAu2h223sNBXuz1sSdvRW+PiiW7Tg7Xt6kxY/079/D9WH5WkVgPKQd1LQQtc08vXC4ZarV+t7iuoZiFguIjHfaQrG0NHR1wyFdHnEpId88zMd/NfIeUZUgP3D+YW20E4r9LWGVFXoltTuR1O1+cUyjm2qaI73p21psdCKBn1tyEU6wpmkH4f5ZNCAWp2OyqMqDdBiobcnzIgHFphGmIfuOdD1xJSqFjNh4sdEAIsNUHWqYTCPJ2QPsk1s3ficSF8sFutwJSXQ7RJoJUxBEjuOa6vbSatdlh53uz4BHQmQ4J0L4lQNIp9/cQeSJJHycPZrUjpIF4u+WiEjIQtEJyUHbZMXZEeVk4F2TWwVO7KlAznwZNGuv+cT/Twy7lzXwEZlgxCu5UOwrSLMCOEAa45IkCYhjFYIaQhrb6lpbVoa03uw7yBREGVIg8NNKk6V4RZULO0EwHRY0j8aZYNWGA8yoy/YUWwn7UL7pNaFHUmI9NEOkX0X0n8z5YTcANIdyqCb6jzMvcQzqUCaYSDibiQ3Qm+Lvs3w3llkq2bf+soZwfAiYNTxeQzBVNeEqRnzwIogH5lRQ08FqWOsY6SvkFao+UFtjCg3Mt9fRO4huoOLpRiE3XoD4VSLFwzVVOo4BWWca0jXNcdpw7B1/bYMcZgfg1AXytBwlKOSB2GzRes1ahdtTmctHc5kY9uQhlBMdRGKety+X2KvDg3BerPlmoZ6nuz4nROJmtDhUCiUSCuzIizL3M0krOG2b3V87LG2X9NhjEGNE6qqJrsG5RVQCXVimbvQzUR1L8b7zu9VgyjRKt4TtI9rse4CvyvLrVM1wh7VsaRr4bYNI79aLTAN8vdJLC6LVzP5FBgG77rJo75p+jwse9yjMsKC0EhJDlnXlQklY8eBakdGg9Gx1PRjoWFNp9oJcRVqmnHwUhb/hDxJuphOxMAowS4g8aGL0ta3cVyfMM78Y2oJxsE/CO6+JGibnur6SOdqryOXinBBmPNm1tN1vHmAKMM+gs1inxXtqqRKpdt2Qq9kQtdYfZ35YSGsc7+oY1Lbjr8mjYYzzUWHnHoJqIQO6XSorl/N43OYe0gx8ynf/LAy/NwPM3evKrqb6VrkNnvnEJ3iY+g3Udj2Tf7mqQSfsn7dO2vmx8X0/hg85zZdFF7K1+1TslbcIih9O5cDVwzyVOmbLluKQdKmXe6pAUSCiMoiqDZhGfUZnYXakOsWWEJquhDPOqJYq9u37TY/Ctoh0kSj9Fu1N3L3kAlVdixPGVKUPglEEZ2QhnUWfUiDq+ZNN0vDcbZkNq6LVIhqxyhO+TrbNo6xUAu9CLPYreW96fW1uCjCjuzL0+DjaefkTDzhlDdFcC4uyddiptahFypKntaN2heO8dZBGZ/CHEXhVnUD76SUjYDGaIqk45XNtOuG5fMQM6Xi5CgucQ4nQohiNEVXKCVCez1SMv9QHFx3qxo0+EBtz31Yd7zQzl/U9V9FcA58aunoK77vK0EQKG3SRWJQ7gsjFBQ33tpxFifVW0nUvRGubsfo1EUI15kIETnl5faNV5x4AXhlrsZUq9LQar8/5ZHid5S+La5ZIKKTczRRux9+65QgXrqYk2tvbRGWblStnTDoRFHthCqP6iRO4xOPtMglINT/gg0nvDKdhz9vrWpQQfm+IdoHm3rVe8O0Y1FVxZQVzxiCooQDQVFm22noJe6UbeEZHhunSRvtAcpTzEUiW7aVPrZLarbB5I2GyUQc20NaPru330LMgp9ix7y36j/ciQ7+8+BL14dt9rZvj61EaIDByDesvTnZwPABggD21ud1hgbhBnLJfJUR8tL0xjdWKiYlV572G2vfTjV78Q75NVe2WZ9YAUoqBIrQJZAIYUitx2XIJv2w6MYHc/ZuJE8X+Y3CUCWWEU3HzWq1olxHrFXeSq38oth2Whh7a8cx1ZoKVpL4fXJJLNbUSKT1oI2gnGoa+BOUQ2VT3NUGpaEej8r9HKtL4tJBS02HOqy6NVPNAt/iLigI+WK8aRu+QQemvFRPZF/leRWGeV70u7YGKxY6vxM5wc39xqBfWBF/CQTntptGyzVm3Ak0do+FULjWKliCJUalq8adr/KTIr5dPlXXU1172ghxHnbpmYjVs5llLk2jdGs6DXOwE+qlCrks8qS2nAbUPYWxXp9D9lI/r+zp7oLKaR9tVQircIsZzyCzNn4l8Blo5n5k5YK9zF0hDM761KyrUtB5VSY+0esClX7iHV5F4Etszq62ofF1YC/CyrmY0iyFgMrSj3M1VDo+0eRhNTsJSiGVQVucrcV2qkl9CpUNOr8kRDrFnVsFiSzm4tjfVFQTW1GCuIN0YO0GRzvvWJXRRnXDNSJky8a1MGXvO2ZCLJkNEGM69OSKKhXhds3ajq4RVZqnNN63XGEsgZKpN5fT18muPFGkfALl/HhT+3XVBVRf2iMpM1bCvMrL0vVTJtckbmqjUXyzzGNjXDLk15aTpZgMVHL61zplbhW5vhuWkcKUTqLkrmoN3ssyMdzSFQedGxVdVAShEscGnO9ONdWKIdflrnNO/5qhHyibTh26mkS58igXMz5sg8FoQCwIaWaklCIfsGk4VYsPnl9Wgcp3kgiioBjJcDL3P8kuJcJbxNvIlm+FbEGmYLbGmLAupdgkY5weK4UHG6OM/nFWWUoZpUMigPEqk8mn2iiyIU7aCEFIDd3X7T0jzCO/Tu00jf+OLIYd5Qy/9fySZULNpaHWk9WiM2bMmDFjxow/hGQ6C2uNhFcMGJdjEFAeEX0vtRCW+PIZjRPWmB3hyzl+JH3iejb3Oe8yQ5fLnPLJgf8Gabqua7c7YVNJk3gQKzcr9tmRC6TXsFQpftez9ljx/UhDOvmYYUIed9ZuML/MV3KCsSQ9dQt0h9ja+12PMjLeZZ99hobu9LjgTB1WcIH4KfdxA/AZFSaP9WwVHi/z6Bfo0umjy34KmNf43PrJeDseqJzhkJvpx82SA8NxfeJjhh5h1Zf34EXw/DKLFfz/wp6UPwe2S2SBb/Ka9u4sgFuGeExC3TJMdh8yFOhl5CF7IVwYwpZVbHwi/R+BSVgFBbqGR9Wl6vWO4djgliGsPpqHMtt3gh+EdMNQ4N/6zPU3XmKALlvnvd0l1L1leE4d3jFUPpIEn9mP+9tuGA6z+5lb9RMmRO2ydV641oTeMjzjjuGHWKPFewo3DJUPvvWHwQomF9J5sYlcV/++xbAmKtMl2n3x7A1Dlx2Sp6YAataj1ahADen6wbcYNiXs+S27M+w3DNesAvXJD69Z6de7urqxxt9hyDSxyG/ZXZn+lSGbptpzRTjOjMFgxLubnNN3GObMebi9ZQOE0eKbgbTQEH52gbspXQxGdrvg9w2Gmx0bnMMtu92pzhlqGiZEIn3wfMfcPRuMZHe3Rv37DCNeC8Vv2eLWa+UMsW+oYvqSRPFgMKj2y+/yuF8xlJ1sRDM2WpJxPZHfsps1i/MofRmKFTcY5u5ugnzJUNJGSKP1U0YSm8HqXy+70aWvwWAwyuBeif8CQ33A2b5jveAyLXgp5s2lL2fIjdRCu7dhXzPE6xF4YCiSYMQB3RVET4AhdxYf/JDf1zTHq/ps7xylCTBcStSEoYd6tN9lmO6uJtBAN47SFBjCAb+LB36b4dtNqoDHUFerPwGGbIP944o0l8ODYPnoQx8utqXkdrchj+ovsf7h9Qxhi97llQYzfR/L8tBI+vDRH/1dbiJFt/tneGD/8WVPQ0zua9A8zyCIgfjnUmfZS0qJn3Ns70GMcryWEFFs76GlJJrgJcLwVU3qvVKM0r2/HwjBeZO9MI6+JLqcE4SHjfa2MDQdzMbmpqUIN29euql0OnnqGTPO8CLhtfjxrLCpiq/F31DwPuN/El5ijjv6Xg87oOGdpqRg+kfs2nWm9TzMk30HV7atrGjYF9j1cd1rIVtlSA8YB5ZPo8HeOa7xCnuQBrTRcd+uT8FAKnH2UVnEIfv1Gb1fZ90ywLh11v36eMS4WLr0v1wpzHkz3nD5805cifGwHFHzJ185K21wIxP+mDYXYZa1sYl29naOTDcoCLO9bJ67Yw5ajhF1eJIV4j7nhjD9aGG2RCBLmpSynRu0Gf8KmSUaXaRJ47apDx5u+8cR4tGttquBkq6j4cdU2NsIY+6pvq2GV5B5yO4jbfhVAL4Xz+UMQUQrFjmFw8oo/2UEGS0k+u7AisQlfsiekSZjfQxhnvIbGA8Mq5gseEfN/JZhTPvHe+OLV4bphj9c/swwkRaEiqbFQ64uvDJksdeZIUund/Q0uzXqU57r8sAwB19asAdZ3zOEXhtWuodHDA4MlQ2MyywXhjJL2aE9o5JcGcINw/Hb2NfKz3mgxCPDJVS0W/4jQx/p7AHytT++YwzPa6MjwwAhdo1KFhoZf53sM4a1xCJ/9zlbMN8zhAYtiL1kvb0yXCKdJeH2Q/BB+R6DI7kwxAfLDiTpbRAp0RerIdD8jCFkGio3lwTOz+IDhibWdDQ8VubCEA6Yis0e3Ugqw73tXhlq25KGt+c0pIiRvkBMNX/K0CYLvHhSav8Dhuz/1xzO7MowIQti5WOnhlG6vx2ljXZTruJjvJC6f2AIJcLPerzwhWHKqXCGYJAFemAI29XqdD4eGHbU/LHftOAMN+cs1rDLK+SG9HOG9IufxTA6W/xBdQ8M4YDwI8NYuuYFB4Ybc7AJg6Yx6OeMwqggC6Z2JsGwJqPxzvj/PzKkHXxkCD2+VDFdLH7KRuaoS0usraiqGZP7AqsFuGEIL2NIubASMzkcmJz3m8sDs2GwDfCvJSgBWun0xez400Co18YG+hKtmNxWO0ZxyYuqloPXxrAkl8PHL/5xBHhH8FDuVFdt44/+M+2ArbRN0563kSz18YJEcZrGaRtn3bYdpAJtdGTbSOO+aSuzSQ+9G2ImVSN3GifjP5rQscPi/PsJ4vDFz6s28TYf+IfvT/3ajhLWyprqbrUZM2bMmDFjxowZM2bMmDFjxowZM2bMmDFjxowZM2bMmDFjxowZM2bMmDFjxowZM2bMmPGn8V/u2mnY90DeowAAAABJRU5ErkJggg==" style="border: 3px solid rgb(0, 0, 0); background-color: rgb(0, 0, 0);"> </div>
+                              <div class="card-title mt-4">VIT-AP<br /> <small>2017-Present</small> </div>
+                              <div class="card-subtitle">
+                                  <p> <small class="text-muted">This is the desc of Q-Hub that is a club of VIT-AP University.</small> </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>-->
+              </div>
+              <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+      </div>
+
+  </section>
+
+  <script>
+  $('#recipeCarousel').carousel({
+    interval: 8000
+  })
+  
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+            }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+  </script>
+
+  <!-- Event Section Ends -->
+
+  <!-- Gallery Section Starts -->
+
+  <section class="gallery-section text-center mb-4 mt-5" id="gallery">
+    <h2 class="h1-responsive font-weight-normal my-5 border border-white rounded text-white" id="head1">GALLERY</h2>
+    <div class="container my-4 border border-white rounded col-md-6 col-10 bg-white h-sm">
+      <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="6"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="7"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="8"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="9"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="10"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="Gallery/E1-1.jpg" alt="First slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E1-2.jpg" alt="Second slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E1-3.jpg" alt="Third slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E1-4.jpg" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-1.png" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-2.png" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-3.png" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-4.png" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-5.png" alt="Fourth slide">
+          </div>
+
+          <div class="carousel-item">
+            <img class="d-block w-100" src="Gallery/E3-6.png" alt="Fourth slide">
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+</section>
+
+  <!-- Gallery Section Ends -->
+
+  <!-- Footer Starts -->
+
+  <div class="container-fluid footer text-light mt-5 pt-5 p-2" style="background-color: rgb(37, 39, 41);">
+    <p class="text-center mb-0">&copy; Copyright QHUB VIT-AP - 2022 | All rights reserved</p>
+    <hr style="background-color: rgb(102, 107, 107)">
+    <div class="text-center icons elegant color-dark">
+      <a href="#" target="_blank" style="text-decoration: none; color: white; font-size: 40px; padding-right: 0.8%;"><i
+          class="fab bottomicons mx-2 fa-instagram-square"></i></a>
+      <a href="#" target="_blank" style="text-decoration: none; color: white; font-size: 40px;"><i
+          class="fab bottomicons mx-2 fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <!-- Footer Ends -->
+
+  </body>
+  <script src="Js/script.js"></script>
+  <script src="Js/jquery.min.js"></script>
+  <script src="Js/popper.js"></script>
+  <script src="Js/owl.carousel.min.js"></script>
+  <script src="Js/main.js"></script>
+  <script src="https://kit.fontawesome.com/273b239f7f.js" crossorigin="anonymous"></script>
+</html>
